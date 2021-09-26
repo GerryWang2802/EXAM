@@ -57,6 +57,7 @@ class Conf:
             log().error(f'读取服务器配置信息../conf/server.conf出错==错误类型：{type(e).__name__},错误内容：{e}')
             exit()
 
+
     def update_entry(self):
         update_sure = input('修改连接的服务器名称和数据库名称(请按y/Y表示确认修改，其他则无效)')
         if update_sure in ('y','Y'):
