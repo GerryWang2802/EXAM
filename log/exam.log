@@ -1,0 +1,31 @@
+2021-09-26 16:50:32,473 ERROR [数据库配置文件读取失败'Conf' object has no attribute 'db'] conf.py:38
+2021-09-26 16:51:59,047 ERROR [数据库配置文件读取失败'Conf' object has no attribute 'db'] conf.py:39
+2021-09-26 16:54:11,251 ERROR [数据库配置文件读取失败'Conf' object has no attribute 'db'] conf.py:41
+2021-09-26 16:56:22,426 ERROR [读入口配置文件../conf/entry.ini出错==错误类型：AttributeError，错误内容：'Conf' object has no attribute 'db'] conf.py:41
+2021-09-26 16:59:08,183 INFO [读取数据库信息成功,数据库名称：formal==服务器名称：formal] conf.py:21
+2021-09-26 16:59:08,184 ERROR [读入口配置文件../conf/entry.ini出错==错误类型：AttributeError，错误内容：'Conf' object has no attribute 'db'] conf.py:41
+2021-09-26 17:00:20,142 INFO [读取数据库信息成功,数据库名称：formal==服务器名称：formal] conf.py:21
+2021-09-26 17:00:20,142 ERROR [读入口配置文件../conf/entry.ini出错==错误类型：AttributeError，错误内容：'Conf' object has no attribute 'db'] conf.py:41
+2021-09-26 17:00:39,719 INFO [读取数据库信息成功,数据库名称：formal==服务器名称：formal] conf.py:21
+2021-09-26 17:00:39,720 ERROR [读入口配置文件../conf/entry.ini出错==错误类型：AttributeError，错误内容：'Conf' object has no attribute 'db'] conf.py:41
+2021-09-26 17:00:49,668 INFO [读取数据库信息成功,数据库名称：formal==服务器名称：formal] conf.py:21
+2021-09-26 17:00:49,669 ERROR [读入口配置文件../conf/entry.ini出错==错误类型：AttributeError，错误内容：'Conf' object has no attribute 'db'] conf.py:41
+2021-09-26 17:02:23,602 INFO [读取数据库信息成功,数据库名称：formal==服务器名称：formal] conf.py:21
+2021-09-26 17:02:23,604 ERROR [读入口配置文件../conf/entry.ini出错==错误类型：AttributeError，错误内容：'Conf' object has no attribute 'db'] conf.py:41
+2021-09-26 17:04:52,568 INFO [读取数据库信息成功,数据库名称：formal==服务器名称：formal] conf.py:21
+2021-09-26 17:04:52,570 INFO [数据库配置文件读取成功,数据库地址:192.168.238.129==数据库名称:root==数据库表名称:exam] conf.py:39
+2021-09-26 17:04:52,570 INFO [数据库配置文件读取成功,数据库地址:192.168.238.129==数据库名称:root==数据库表名称:exam] conf.py:39
+2021-09-26 17:06:22,726 ERROR [读数据库入口配置文件../conf/entry.ini出错==错误类型：AttributeError，错误内容：'Conf' object has no attribute '_Conf__which_db'] conf.py:41
+2021-09-26 17:07:15,853 INFO [读取数据库信息成功,数据库名称：formal==服务器名称：formal] conf.py:21
+2021-09-26 17:07:15,853 INFO [数据库配置文件读取成功,数据库地址:192.168.238.129==数据库名称:root==数据库表名称:exam] conf.py:39
+2021-09-26 17:07:40,712 INFO [读取数据库信息成功,数据库名称：formal==服务器名称：formal] conf.py:21
+2021-09-26 17:07:40,714 INFO [数据库配置文件读取成功,数据库地址:192.168.238.129==数据库名称:root==数据库表名称:exam] conf.py:39
+2021-09-26 17:20:41,368 INFO [读取数据库信息成功,数据库名称：formal==服务器名称：formal] conf.py:21
+2021-09-26 17:20:41,373 INFO [数据库配置文件读取成功,数据库地址:192.168.238.129==数据库名称:root==数据库表名称:exam] conf.py:39
+2021-09-26 17:20:41,374 ERROR [读取服务器配置信息../conf/server.conf出错==错误类型：AttributeError,错误内容：'Conf' object has no attribute 'host'] conf.py:57
+2021-09-26 17:23:05,955 INFO [读取数据库信息成功,数据库名称：formal==服务器名称：formal] conf.py:21
+2021-09-26 17:23:05,958 INFO [数据库配置文件读取成功,数据库地址:192.168.238.129==数据库名称:root==数据库表名称:exam] conf.py:39
+2021-09-26 17:23:05,959 ERROR [读取服务器配置信息../conf/server.conf出错==错误类型：AttributeError,错误内容：'Conf' object has no attribute 'host'] conf.py:57
+2021-09-26 17:24:10,924 INFO [读取数据库信息成功,数据库名称：formal==服务器名称：formal] conf.py:21
+2021-09-26 17:24:10,925 INFO [数据库配置文件读取成功,数据库地址:192.168.238.129==数据库名称:root==数据库表名称:exam] conf.py:39
+2021-09-26 17:24:10,926 INFO [读取读取服务器配置信息成功,服务器地址:http://192.168.238.129:80:] conf.py:55
