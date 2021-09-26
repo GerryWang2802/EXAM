@@ -63,15 +63,31 @@ class Conf:
         if update_sure in ('y','Y'):
             new_db_name = input('请输入新的要连接的数据库名称：')
             new_server_name = input('请输入新的要连接的服务器名称：')
-            if (new_db_name,new_server_name) in ('debug','smoke','formal'):
-                conf = configparser.ConfigParser()
-                conf.read('../conf/entry.ini')
-                conf.set()
-
+            if {new_db_name,new_server_name}.issubset({'debug','smoke','formal'}):
+                old_which_db,old_which_server = self.__which_db,self.__which_server
+                if old_which_db !=new_db_name and old_which_server != new_server_name:
+                    conf = configparser.ConfigParser()
+                    conf.read('../conf/entry.ini')
+                    conf.set('entry','which_db',new_db_name)
+                    conf.set('entry','which_server',new_server_name)
+                    with open('../conf/entry.ini','w') as file:
+                        conf.write(file)
+                    log().info(f'数据名：{old_which_db}成功换为：{new_db_name}==服务器名：{old_which_server}成功换为：{new_server_name}')
+                else:
+                    log().error(f'当前数据库名：{new_db_name}服务器名：{new_server_name}与改名重复')
+                    print('当前名称无效，请重新输入')
+            else:
+                log().error(f'当前数据库名：{new_db_name}服务器名：{new_server_name}不在debug,smoke,formal修改范围内')
+                print('请从debug,smoke,formal中选择')
+        else:
+            log().error(f'输入的确认信息不是（y/Y）')
+            print('请按要求输入')
+            exit()
 
 if __name__=='__main__':
     a = Conf()
     # print(a.read_entry())
     a.read_db()
     # print(a.read_server())
-    a.read_server()
+    # a.read_server()
+    a.update_entry()
