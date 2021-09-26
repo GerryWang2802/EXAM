@@ -67,6 +67,7 @@ class Conf:
                 conf.read('../conf/entry.ini')
                 conf.set()
 
+
 if __name__=='__main__':
     a = Conf()
     # print(a.read_entry())
