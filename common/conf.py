@@ -4,8 +4,8 @@ from log import log
 class Conf:
     def __init__(self):
         self.read_entry()
-        # self.read_db()
-        pass
+        self.read_db()
+
     def read_entry(self):
         """
         读取数据库名称和服务器名称
@@ -32,11 +32,11 @@ class Conf:
             conf = configparser.ConfigParser()
             conf.read('../conf/db.conf')
             host = conf.get(self.__which_db,'host')
-            uname = conf.get(self.__which_db,'uname')
+            user = conf.get(self.__which_db,'user')
             password = conf.get(self.__which_db,'password')
             db = conf.get(self.__which_db,'db')
-            self.args = {'host': host, 'uname': uname, 'password': password, 'db': db}
-            log().info(f'数据库配置文件读取成功,数据库地址:{host}==数据库名称:{uname}==数据库表名称:{db}')
+            self.args = {'host': host, 'user': user, 'password': password, 'db': db}
+            log().info(f'数据库配置文件读取成功,数据库地址:{host}==数据库名称:{user}==数据库表名称:{db}')
         except BaseException as e:
             log().error(f'读数据库入口配置文件../conf/db.conf出错==错误类型：{type(e).__name__}，错误内容：{e}')
             exit()
@@ -56,7 +56,6 @@ class Conf:
         except BaseException as e:
             log().error(f'读取服务器配置信息../conf/server.conf出错==错误类型：{type(e).__name__},错误内容：{e}')
             exit()
-
 
     def update_entry(self):
         update_sure = input('修改连接的服务器名称和数据库名称(请按y/Y表示确认修改，其他则无效)')
