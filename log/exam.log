@@ -1,1 +1,13 @@
 2021-09-27 21:51:08,273 INFO [读测试用例文件../excelcase/login.xlsx成功] casedata.py:52
+2021-09-28 10:11:57,949 INFO [读测试用例文件../excelcase/login.xlsx成功] casedata.py:52
+2021-09-28 11:11:26,894 INFO [输出json格式为：{'Status': 1003, 'Result': 'Username admin02 is taken', 'Message': '用户名已被占用'}，成功将{'username': 'admin02', 'password': '123456','confirm':'123456','name':'管理员02'}参数信息提交给接口] sendata.py:19
+2021-09-28 11:13:46,467 INFO [输出json格式为：{'Status': 1003, 'Result': 'Username admin02 is taken', 'Message': '用户名已被占用'}，成功将{'username': 'admin02', 'password': '123456','confirm':'123456','name':'管理员02'}参数信息提交给接口] sendata.py:19
+2021-09-28 11:57:38,983 INFO [测试01响应结果对比失败==不通过] sendata.py:50
+2021-09-28 11:57:47,760 INFO [测试01响应结果通过] sendata.py:48
+2021-09-28 15:00:06,963 INFO [测试01响应结果通过] sendata.py:56
+2021-09-28 15:00:25,017 INFO [测试01响应结果通过] sendata.py:56
+2021-09-28 15:00:51,853 INFO [测试01响应结果通过] sendata.py:56
+2021-09-28 15:03:38,003 INFO [测试01响应结果通过] sendata.py:56
+2021-09-28 15:03:48,242 INFO [测试01响应结果对比失败==不通过] sendata.py:58
+2021-09-28 15:47:17,987 INFO [读测试用例文件../excelcase/login.xlsx成功] casedata.py:52
+2021-09-28 15:47:21,666 INFO [读测试用例文件../excelcase/login.xlsx成功] casedata.py:52
