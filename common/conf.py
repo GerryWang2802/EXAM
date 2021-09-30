@@ -1,10 +1,12 @@
 import configparser
-from log import log
+from common.log import log
 
 class Conf:
     def __init__(self):
         self.read_entry()
         self.read_db()
+        self.read_server()
+
 
     def read_entry(self):
         """
@@ -51,7 +53,7 @@ class Conf:
             conf.read('../conf/server.conf')
             self.ip = conf.get(self.__which_server,'ip')
             self.port = conf.get(self.__which_server,'port')
-            self.host = 'http://%s:%s:'%(self.ip,self.port)
+            self.host = 'http://%s:%s'%(self.ip,self.port)
             log().info(f'读取读取服务器配置信息成功,服务器地址:{self.host}')
         except BaseException as e:
             log().error(f'读取服务器配置信息../conf/server.conf出错==错误类型：{type(e).__name__},错误内容：{e}')
@@ -86,7 +88,7 @@ class Conf:
 if __name__=='__main__':
     a = Conf()
     # print(a.read_entry())
-    a.read_db()
-    # print(a.read_server())
+    # a.read_db()
+    a.read_server()
     # a.read_server()
-    a.update_entry()
+    # a.update_entry()

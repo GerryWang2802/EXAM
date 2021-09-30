@@ -1,12 +1,21 @@
 import pytest
+from common.conf import Conf
+from common.db import read_db_conf
 
 @pytest.fixture(autouse=True)
 def get_url():
-    pass
+    global host_url
+    a = Conf()
+    url_host = a.host
+
 
 @pytest.fixture()
 def init():
-    pass
+    """
+    读取注册sql文件
+    :return:
+    """
+    read_db_conf('../initsql/signup.sql')
 
 cases = []
 @pytest.mark.parametrize('a,b,expect',cases)

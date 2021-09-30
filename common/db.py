@@ -3,7 +3,7 @@
 链接数据库
 """
 import pymysql, os
-from log import log
+from common.log import log
 from common.conf import Conf
 
 
@@ -41,14 +41,14 @@ class Db:
             log.error(f'数据库连接失败：{type(e).__name__},错误信息：{e}')
             exit()
 
-    def link_db(self):
+    def link_db(self,*sqlfiles):
         """
         连接数据库
         :return:
         """
         conn, cursor = self.con, self.cursor
         try:
-            for sql in read_db_conf():
+            for sql in read_db_conf(*sqlfiles):
                 cursor.execute(sql)
             conn.commit()
             conn.close()

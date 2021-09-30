@@ -2,7 +2,7 @@
 测试用例参数化，传参执行测试用例
 """
 import requests
-from log import log
+from common.log import log
 
 def send_request(method,url,args):
     """
@@ -63,5 +63,6 @@ def check_result(case_info,res_type,actual,expect):
 
 
 if __name__=='__main__':
-    # send_request('post','192.168.238.129/exam/signup/',"{'username': 'admin02', 'password': '123456','confirm':'123456','name':'管理员02'}")
-    check_result('测试01','json','w','r')
+    send_request('post','192.168.238.129:80/exam/login/',"{'username': '', 'password': ''}")
+    # check_result('测试01','json','w','r')
+    # send_request('post','http://192.168.238.129:80/exam/login/',"{'username': '', 'password': ''}")

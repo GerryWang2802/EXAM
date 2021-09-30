@@ -2,7 +2,7 @@
 读取Excel测试用例
 """
 import pandas,os
-from log import log
+from common.log import log
 
 def read_xlsx_case(*xlsxfile):
     """
